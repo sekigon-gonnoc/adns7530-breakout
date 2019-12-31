@@ -24,6 +24,7 @@
 ## 使い方
 - I2Cスレーブ(7bitアドレス:0x1E)として動作します
   - I2Cでデータを5byte読み出すと以下の情報を送信します。データの詳細についてはADNS-7530のデータシートを参照してください。
+  
     | バイト | 内容              |
     | ------ | ----------------- |
     | 1      | 0                 |
@@ -31,6 +32,7 @@
     | 3      | x方向(下位8bit)   |
     | 4      | y方向(下位8bit)   |
     | 5      | 5方向(各上位4bit) |
+    
 - QMKで使う場合、keymap.cに通信用のコードとポインティングデバイスの送信用コードを追加してください
   - Pro Micro/BLE Micro Proで使う場合のサンプルコードは以下にあります
     - [Pro Micro用](https://github.com/sekigon-gonnoc/qmk_firmware/tree/dev/ble_micro_pro/keyboards/helix/rev2/keymaps/tb_module)
@@ -39,6 +41,8 @@
 ## 作例
 ### Helixのトラックボール拡張として使う
 HelixのOLEDモジュール取り付け用のピンヘッダに本モジュールを取り付けてトラックボール拡張として動作させます
+
+<img src="https://user-images.githubusercontent.com/43873124/71624362-7ebdc700-2c25-11ea-87c7-bde34b2fab53.png" width="320">
 
 - タミヤのボールキャスターをボールホルダーとして使い、ネジで取り付けます
 - 右手に付ける場合には基板のRで囲われた穴に、左手に付ける場合はLの穴にピンヘッダを差し込みます
