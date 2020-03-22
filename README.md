@@ -38,6 +38,10 @@
     - [Pro Micro用](https://github.com/sekigon-gonnoc/qmk_firmware/tree/dev/ble_micro_pro/keyboards/helix/rev2/keymaps/tb_module)
     - [BLE Micro Pro用](https://github.com/sekigon-gonnoc/qmk_firmware/tree/dev/ble_micro_pro/keyboards/ble_micro_pro/keymaps/tb_module)
 
+## ファームウェア
+- 書き込み済みのファームウェアのソースコードはfirmwareフォルダに入っています
+- 一部ロットでSWD用ポートのシルクが間違っていて、SWCKLとSWDIOの表示が入れ替わってしまっています。SWCLK, SWDIO, GND, RESETが正しい順番です
+
 ## 作例
 ### Helixのトラックボール拡張として使う
 HelixのOLEDモジュール取り付け用のピンヘッダに本モジュールを取り付けてトラックボール拡張として動作させます
